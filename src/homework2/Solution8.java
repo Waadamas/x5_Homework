@@ -4,7 +4,7 @@ import static java.util.Arrays.sort;
 
 public class Solution8 {
     public static void main(String[] args) {
-        int[] array = {1,-10,5,6,45,23,-45,-34,0,32,56,-1,2,-2};
+        int[] array = {1, -10, 5, 6, 45, 23, -45, -34, 0, 32, 56, -1, 2, -2};
 
         maxNumber(array);
         positiveNumbers(array);
@@ -14,10 +14,10 @@ public class Solution8 {
 
     public static void maxNumber(int[] array) {
         sort(array);
-        System.out.println("Максимальное значение в массиве: " + array[array.length-1]);
+        System.out.println("Максимальное значение в массиве: " + array[array.length - 1]);
     }
 
-    public static void positiveNumbers(int []array){
+    public static void positiveNumbers(int[] array) {
         int sum = 0;
         int count = 0;
         for (int value : array) {
@@ -30,7 +30,7 @@ public class Solution8 {
         System.out.println("Количество положительных эементов: " + count);
     }
 
-    public static void negativeNumbers(int[] array){
+    public static void negativeNumbers(int[] array) {
         int sumOdd = 0;
         int sum = 0;
         int count = 0;
@@ -38,7 +38,7 @@ public class Solution8 {
             if (value < 0) {
                 sum = sum + value;
                 count++;
-                if (value % 2 == 0){
+                if (value % 2 == 0) {
                     sumOdd = sumOdd + value;
                 }
 
