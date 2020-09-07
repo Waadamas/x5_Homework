@@ -10,10 +10,8 @@ public class Solution3 {
         int x = Integer.parseInt(bufferedReader.readLine());
         if (x >= 0) {
             x++;
-            System.out.println(x);
-        } else {
-            System.out.println(x);
         }
+        System.out.println(x);
 
     }
 
