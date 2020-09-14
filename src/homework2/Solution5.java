@@ -8,7 +8,7 @@ import static java.util.Arrays.sort;
 public class Solution5 {
     public static void main(String[] args) throws Exception {
         int[] array = new int[3];
-        for (int i = 1; i < 4; i++) {
+        for (int i = 1; i <= array.length; i++) {
             System.out.println("Введите число " + i + ":");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             int x = Integer.parseInt(bufferedReader.readLine());
